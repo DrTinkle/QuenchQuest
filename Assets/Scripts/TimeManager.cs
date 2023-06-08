@@ -125,9 +125,13 @@ public class TimeManager : MonoBehaviour
 
     void ControlSpotLights()
     {
-        if (Hours > 9f)
+        if (Hours > 9f && Hours < 15f)
         {
             lightsManager.SwitchLights(false);
+        }
+        else
+        {
+            lightsManager.SwitchLights(true);
         }
     }
 
