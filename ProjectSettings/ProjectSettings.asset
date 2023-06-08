@@ -750,11 +750,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 
+  cloudProjectId: 46bd2e1b-d4fb-43f5-a723-349d2a2dd12b
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: Lemonade Tycoon Roguelike
+  organizationId: drtinkle
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
