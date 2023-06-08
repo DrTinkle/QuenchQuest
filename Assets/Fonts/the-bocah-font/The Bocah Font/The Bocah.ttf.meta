@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 42d03b3366d07284cad8961f18efcf0c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Bocah
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 302c472c080097044910e75a96a8b96e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

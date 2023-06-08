@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 86295b699023b5f4988f1c3886bae8d0
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - GetCoffee regular
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 135b486893a6f0f4fa5e696aec53d48a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
