@@ -1,0 +1,673 @@
+Using pre-set license
+Built from '2022.1/release' branch; Version is '2022.1.0f1 (369b620af41c) revision 3578722'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'en' Physical Memory: 32622 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+G:\Unity\2022.1.0f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker14
+-projectPath
+G:/Game Projects/Experiments/Lemonade Tycoon Roguelike
+-logFile
+Logs/AssetImportWorker14.log
+-srvPort
+51332
+Successfully changed project path to: G:/Game Projects/Experiments/Lemonade Tycoon Roguelike
+G:/Game Projects/Experiments/Lemonade Tycoon Roguelike
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 167.91 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.1.0f1 (369b620af41c)
+[Subsystems] Discovering subsystems at path G:/Unity/2022.1.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path G:/Game Projects/Experiments/Lemonade Tycoon Roguelike/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 Ti (ID=0x2208)
+    Vendor:   NVIDIA
+    VRAM:     12100 MB
+    Driver:   31.0.15.3168
+Initialize mono
+Mono path[0] = 'G:/Unity/2022.1.0f1/Editor/Data/Managed'
+Mono path[1] = 'G:/Unity/2022.1.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'G:/Unity/2022.1.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56440
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: G:/Unity/2022.1.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: G:/Unity/2022.1.0f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: G:/Unity/2022.1.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001312 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 138.15 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.631 seconds
+Domain Reload Profiling:
+	ReloadAssembly (631ms)
+		BeginReloadAssembly (64ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (484ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (115ms)
+				TypeCache.Initialize (115ms)
+					TypeCache.ScanAssembly (112ms)
+				ResolveRequiredComponents (1ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (303ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (42ms)
+				SetLoadedEditorAssemblies (6ms)
+				RefreshPlugins (138ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (81ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003973 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image G:\Game Projects\Experiments\Lemonade Tycoon Roguelike\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image G:\Game Projects\Experiments\Lemonade Tycoon Roguelike\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 151.00 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.283 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1283ms)
+		BeginReloadAssembly (199ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (132ms)
+		EndReloadAssembly (997ms)
+			LoadAssemblies (63ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (234ms)
+				TypeCache.Initialize (224ms)
+					TypeCache.ScanAssembly (220ms)
+				ResolveRequiredComponents (10ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (585ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (7ms)
+				RefreshPlugins (151ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (250ms)
+				ProcessInitializeOnLoadMethodAttributes (74ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.65 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6040 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (0.7 MB). Loaded Objects now: 6519.
+Memory consumption went from 0.96 GB to 0.96 GB.
+Total: 3.731000 ms (FindLiveObjects: 0.485500 ms CreateObjectMapping: 0.303000 ms MarkObjects: 2.736800 ms  DeleteObjects: 0.204500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003541 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image G:\Game Projects\Experiments\Lemonade Tycoon Roguelike\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image G:\Game Projects\Experiments\Lemonade Tycoon Roguelike\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.48 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.890 seconds
+Domain Reload Profiling:
+	ReloadAssembly (890ms)
+		BeginReloadAssembly (96ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (731ms)
+			LoadAssemblies (61ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (203ms)
+				TypeCache.Initialize (194ms)
+					TypeCache.ScanAssembly (189ms)
+				ResolveRequiredComponents (9ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (364ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (6ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (215ms)
+				ProcessInitializeOnLoadMethodAttributes (64ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.41 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5845 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (0.7 MB). Loaded Objects now: 6523.
+Memory consumption went from 0.93 GB to 0.93 GB.
+Total: 3.635400 ms (FindLiveObjects: 0.421600 ms CreateObjectMapping: 0.299800 ms MarkObjects: 2.761300 ms  DeleteObjects: 0.151200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003611 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image G:\Game Projects\Experiments\Lemonade Tycoon Roguelike\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image G:\Game Projects\Experiments\Lemonade Tycoon Roguelike\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.49 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+Mono: successfully reloaded assembly
+- Completed reload, in  0.918 seconds
+Domain Reload Profiling:
+	ReloadAssembly (918ms)
+		BeginReloadAssembly (103ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (747ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (237ms)
+				TypeCache.Initialize (224ms)
+					TypeCache.ScanAssembly (217ms)
+				ResolveRequiredComponents (13ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (354ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (5ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (215ms)
+				ProcessInitializeOnLoadMethodAttributes (59ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.17 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5977 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 76 unused Assets / (4.0 MB). Loaded Objects now: 6620.
+Memory consumption went from 0.96 GB to 0.96 GB.
+Total: 5.320900 ms (FindLiveObjects: 0.308900 ms CreateObjectMapping: 0.199100 ms MarkObjects: 3.802100 ms  DeleteObjects: 1.009800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004641 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image G:\Game Projects\Experiments\Lemonade Tycoon Roguelike\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image G:\Game Projects\Experiments\Lemonade Tycoon Roguelike\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.48 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.935 seconds
+Domain Reload Profiling:
+	ReloadAssembly (935ms)
+		BeginReloadAssembly (113ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (757ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (214ms)
+				TypeCache.Initialize (204ms)
+					TypeCache.ScanAssembly (199ms)
+				ResolveRequiredComponents (10ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (375ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (5ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (60ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.24 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5977 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 76 unused Assets / (4.0 MB). Loaded Objects now: 6624.
+Memory consumption went from 0.96 GB to 0.96 GB.
+Total: 4.404500 ms (FindLiveObjects: 0.405300 ms CreateObjectMapping: 0.262500 ms MarkObjects: 2.659500 ms  DeleteObjects: 1.075000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003824 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image G:\Game Projects\Experiments\Lemonade Tycoon Roguelike\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image G:\Game Projects\Experiments\Lemonade Tycoon Roguelike\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.43 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.913 seconds
+Domain Reload Profiling:
+	ReloadAssembly (914ms)
+		BeginReloadAssembly (94ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (751ms)
+			LoadAssemblies (62ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (218ms)
+				TypeCache.Initialize (200ms)
+					TypeCache.ScanAssembly (194ms)
+				ResolveRequiredComponents (18ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (367ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (6ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (219ms)
+				ProcessInitializeOnLoadMethodAttributes (60ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.84 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5977 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 76 unused Assets / (4.0 MB). Loaded Objects now: 6628.
+Memory consumption went from 0.96 GB to 0.96 GB.
+Total: 4.268400 ms (FindLiveObjects: 0.383600 ms CreateObjectMapping: 0.255100 ms MarkObjects: 2.701400 ms  DeleteObjects: 0.926600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003293 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image G:\Game Projects\Experiments\Lemonade Tycoon Roguelike\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image G:\Game Projects\Experiments\Lemonade Tycoon Roguelike\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.43 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.911 seconds
+Domain Reload Profiling:
+	ReloadAssembly (912ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (751ms)
+			LoadAssemblies (68ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (198ms)
+				TypeCache.Initialize (188ms)
+					TypeCache.ScanAssembly (184ms)
+				ResolveRequiredComponents (10ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (401ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (5ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (252ms)
+				ProcessInitializeOnLoadMethodAttributes (67ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.21 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5977 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 76 unused Assets / (4.0 MB). Loaded Objects now: 6632.
+Memory consumption went from 0.96 GB to 0.96 GB.
+Total: 3.428100 ms (FindLiveObjects: 0.348100 ms CreateObjectMapping: 0.213800 ms MarkObjects: 2.103500 ms  DeleteObjects: 0.761800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 223476.839808 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Game Controller/Game Controller/XBoxOne/Dark_PNG/A-Button-Dark.png
+  artifactKey: Guid(3f7474c51667b4fca9e9f3b8c01f60a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Game Controller/Game Controller/XBoxOne/Dark_PNG/A-Button-Dark.png using Guid(3f7474c51667b4fca9e9f3b8c01f60a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efde7c723f64d1efd89305b865fe7ff8') in 0.124250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Game Controller/Game Controller/PS4/Dark_PSD/A-Button-Dark.psd
+  artifactKey: Guid(961b2f9f10d3e4448bb1ae32513e7de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Game Controller/Game Controller/PS4/Dark_PSD/A-Button-Dark.psd using Guid(961b2f9f10d3e4448bb1ae32513e7de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d97b5de6ddd15d12f2051f901ae1085') in 0.032427 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Game Controller/Game Controller/Steam/Dark_PNG/A-Button-Green.png
+  artifactKey: Guid(f577db51c28144581808c765e4e5790c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Game Controller/Game Controller/Steam/Dark_PNG/A-Button-Green.png using Guid(f577db51c28144581808c765e4e5790c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc967b79c769fe46af864a5490ee8a12') in 0.019514 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary.png
+  artifactKey: Guid(3024cb66f112f47f599953fe508d632f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary.png using Guid(3024cb66f112f47f599953fe508d632f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbe365914a06ecc016ae6acb06d227b8') in 0.014167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Icons/Emojis/Filled/PSD/Angry.psd
+  artifactKey: Guid(beb3fbb391e9341a083ed2007e0df418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Icons/Emojis/Filled/PSD/Angry.psd using Guid(beb3fbb391e9341a083ed2007e0df418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a400a5a09aa9977ab794a7f13354dcab') in 0.022314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Mockups/Themes/Light/PNG/Alert Popup.png
+  artifactKey: Guid(35b8b5587687e438183ea2554f306cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Mockups/Themes/Light/PNG/Alert Popup.png using Guid(35b8b5587687e438183ea2554f306cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae6256752161f0943b17e97b254b3923') in 0.032702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Icons/Icons/PNG/Ability.png
+  artifactKey: Guid(8acfdb87041c143089569d446383a47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Icons/Icons/PNG/Ability.png using Guid(8acfdb87041c143089569d446383a47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb5e032ae3400098cc858d68588bae62') in 0.032748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Icons/Icons/PNG/Analytics.png
+  artifactKey: Guid(9c6d2cef2e3244baa98d84ed2147cfe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Icons/Icons/PNG/Analytics.png using Guid(9c6d2cef2e3244baa98d84ed2147cfe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04182f8dbd7896039b14c9dd1c69e1d5') in 0.029059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Mockups/Themes/Dark/PSD/Alert Popup.psd
+  artifactKey: Guid(eb29ef9635dc14681b42e1dced3ec01c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Mockups/Themes/Dark/PSD/Alert Popup.psd using Guid(eb29ef9635dc14681b42e1dced3ec01c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e3368fb719b590af004b72e15437ae1') in 0.034805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Demo/Sprites/Icons/Icons/UI/Basic/Alert.png
+  artifactKey: Guid(6940123ff2c46402aaa410ce2c019a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Demo/Sprites/Icons/Icons/UI/Basic/Alert.png using Guid(6940123ff2c46402aaa410ce2c019a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0d6972bb5e32b4ec3e41c2f410be58a') in 0.032453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Game Controller/Game Controller/PS4/White_PSD/A-Button-White.psd
+  artifactKey: Guid(91e4629b079084fd492d21e907c3e848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Game Controller/Game Controller/PS4/White_PSD/A-Button-White.psd using Guid(91e4629b079084fd492d21e907c3e848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5efe7b06c354f7b05614689bf88488ad') in 0.016082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Icons/Icons/PNG/Aim - Border.png
+  artifactKey: Guid(b01fb07d6a6aa447e8734acae434806e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Icons/Icons/PNG/Aim - Border.png using Guid(b01fb07d6a6aa447e8734acae434806e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b1a32033fd14e39de0396fc513f771a') in 0.019581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Game Controller/Game Controller/Steam/White_PNG/A-Button-Green-White.png
+  artifactKey: Guid(069bc1ba55041409d9da7e08adc1b3cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Game Controller/Game Controller/Steam/White_PNG/A-Button-Green-White.png using Guid(069bc1ba55041409d9da7e08adc1b3cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a2b9a3752750160ac776f8deb433e2e') in 0.017849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Demo/Sprites/Icons/Icons/Game/Magic/Ability.png
+  artifactKey: Guid(bca2805d481614b578faaa38817448b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Demo/Sprites/Icons/Icons/Game/Magic/Ability.png using Guid(bca2805d481614b578faaa38817448b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e63c4c4d802e059cabf1f9bd31673120') in 0.015586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Icons/Icons/PNG/Alarm.png
+  artifactKey: Guid(27ad5b8a701714ff389d1b6a0befe441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Icons/Icons/PNG/Alarm.png using Guid(27ad5b8a701714ff389d1b6a0befe441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bdcd5c9c96d9c3c0c0527c236fde508') in 0.023862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Game Controller/Game Controller/Steam/Dark_PSD/A-Button-Green-Dark.psd
+  artifactKey: Guid(8327275c19e6e49fabd1b28020c90a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Game Controller/Game Controller/Steam/Dark_PSD/A-Button-Green-Dark.psd using Guid(8327275c19e6e49fabd1b28020c90a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f917491bad53cd1ecc3e41a952cb2654') in 0.015436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Demo/Sprites/Icons/Icons/Game/Tools/Aim - Border.png
+  artifactKey: Guid(d0dee6450818242c4a3e18671b62f117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Demo/Sprites/Icons/Icons/Game/Tools/Aim - Border.png using Guid(d0dee6450818242c4a3e18671b62f117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65bca606745e1a324e889645a917993b') in 0.014619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Icons/Icons/PNG/Analytics - Circles.png
+  artifactKey: Guid(9824b653844544ccba60c2281e3958bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Icons/Icons/PNG/Analytics - Circles.png using Guid(9824b653844544ccba60c2281e3958bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b39a967a34234bad12631eb4bcb9b8b3') in 0.018119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Demo/Sprites/Icons/Emojis/Filled/Angry.png
+  artifactKey: Guid(8cc852fbe75fe4af0852a6e1c1e01849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Demo/Sprites/Icons/Emojis/Filled/Angry.png using Guid(8cc852fbe75fe4af0852a6e1c1e01849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47dec4c956f43311e1bc98807d8de5c4') in 0.012653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Icons/Icons/PSD/Aim - Border.psd
+  artifactKey: Guid(5d70be49556694d88b3aef41990f7020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Icons/Icons/PSD/Aim - Border.psd using Guid(5d70be49556694d88b3aef41990f7020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '135dca0df99fff7d973d6b28d6a22deb') in 0.018476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary On@32.png
+  artifactKey: Guid(fad537f7b1df74e869915bbab4356a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary On@32.png using Guid(fad537f7b1df74e869915bbab4356a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cfa0c08d3c4d01688f35aa93ec32f88') in 0.011435 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Game Controller/Game Controller/XBoxOne/White_PNG/AddressBar-Button-White.png
+  artifactKey: Guid(ee399c08545784759a03ad9072610520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Game Controller/Game Controller/XBoxOne/White_PNG/AddressBar-Button-White.png using Guid(ee399c08545784759a03ad9072610520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cd459746ee3354964c73736fcb5f2a9') in 0.015535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary On@64.png
+  artifactKey: Guid(19370790a791d4fc99ee3830251366f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary On@64.png using Guid(19370790a791d4fc99ee3830251366f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72a7c33c92a6c627bd40733484c0b484') in 0.018121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary On@128.png
+  artifactKey: Guid(46e8f61d13f8b49c7b2ac6beb5788f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary On@128.png using Guid(46e8f61d13f8b49c7b2ac6beb5788f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a43093a4434a5bcd7c74da2c63f9a5d8') in 0.015695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Icons/Icons/PNG/Alarm Off.png
+  artifactKey: Guid(ddb67ead68a6a4a2a925c066670ca818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Icons/Icons/PNG/Alarm Off.png using Guid(ddb67ead68a6a4a2a925c066670ca818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e862ea615c0a79bf2bbb6406edb3df3f') in 0.022208 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Icons/Icons/PSD/Alarm.psd
+  artifactKey: Guid(8267b1b25d45044e1bb8c225503f1b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Icons/Icons/PSD/Alarm.psd using Guid(8267b1b25d45044e1bb8c225503f1b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdae1092c8f97efa9f2ad4e69050b765') in 0.020679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Game Controller/Game Controller/XBoxOne/Dark_PSD/AddressBar-Button-Dark.psd
+  artifactKey: Guid(171ea51ce0b7d423aac1d1299e03330a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Game Controller/Game Controller/XBoxOne/Dark_PSD/AddressBar-Button-Dark.psd using Guid(171ea51ce0b7d423aac1d1299e03330a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8107d6972450385b336bc9b9743f17d1') in 0.017123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary On@256.png
+  artifactKey: Guid(b2d98f54996544507ade581c727c1c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary On@256.png using Guid(b2d98f54996544507ade581c727c1c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01d1babec0b4bf005b94e4427a91822f') in 0.013822 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary On.png
+  artifactKey: Guid(a86c61e5bed184ddc884003f0c947bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary On.png using Guid(a86c61e5bed184ddc884003f0c947bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a33cd2954dd6a27d3f7d20d9cc3ceb2e') in 0.011116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Mockups/Themes/Light/PSD/Alert Popup.psd
+  artifactKey: Guid(40691ef3d4f0d48118bb1a2131a62936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Mockups/Themes/Light/PSD/Alert Popup.psd using Guid(40691ef3d4f0d48118bb1a2131a62936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bb876bb9039efa27385e14ecc7f5c4f') in 0.021902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sources/Game Controller/Game Controller/PS4/White_PNG/A-Button-White.png
+  artifactKey: Guid(17ada082aec9b4fb2a6c4fd24d802be5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sources/Game Controller/Game Controller/PS4/White_PNG/A-Button-White.png using Guid(17ada082aec9b4fb2a6c4fd24d802be5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bc3556ce5d1ec3a5a3c1ac992e0cff6') in 0.014375 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
