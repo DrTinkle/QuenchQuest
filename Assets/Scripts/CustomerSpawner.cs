@@ -8,7 +8,6 @@ public class CustomerSpawner : MonoBehaviour
 
     [SerializeField] CustomerPool customerPool;
     [SerializeField] TimeManager timeManager;
-    public float customerSpawnDelay;
 
     public List<Transform> spawnPoints;
     public AnimationCurve spawnRateOverDay;
@@ -33,12 +32,11 @@ public class CustomerSpawner : MonoBehaviour
     void Start()
     {
         startTimeDelay = Time.time + 2.0f;
-        nextSpawnTime = Time.time;
+        nextSpawnTime = Time.time + GetSpawnDelay();
     }
 
     void Update()
     {
-        customerSpawnDelay = spawnRateOverDay.Evaluate(timeManager.time / 24) * UnityEngine.Random.Range(1.0f, 5.0f);
         RandomizeSpawn();
         GetCustomerList();
     }
@@ -47,14 +45,13 @@ public class CustomerSpawner : MonoBehaviour
     {
         if (customerPool.CustomerCount() > 0 && Time.time >= nextSpawnTime && Time.time >= startTimeDelay)
         {
-
             SpawnCustomer();
         }
     }
 
     void SpawnCustomer()
     {
-        nextSpawnTime = Time.time + customerSpawnDelay;
+        nextSpawnTime = Time.time + GetSpawnDelay();
         Customer customer = customerPool.GetCustomer();
 
         if (customer == null)
@@ -67,6 +64,14 @@ public class CustomerSpawner : MonoBehaviour
         customer.transform.position = spawnPoints[i].position;
 
         currentCustomers.Add(customer);
+    }
+
+    float GetSpawnDelay()
+    {
+        float customerSpawnDelay = spawnRateOverDay.Evaluate(timeManager.time) * UnityEngine.Random.Range(1.0f, 5.0f);
+        Debug.Log(customerSpawnDelay);
+        return customerSpawnDelay;
+        
     }
 
     void GetCustomerList()
@@ -93,5 +98,6 @@ public class CustomerSpawner : MonoBehaviour
         customerPool.ReturnCustomer(customer);
     }
 }
+
 
 
