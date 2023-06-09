@@ -24,7 +24,7 @@ public class LemonadeStand : MonoBehaviour
 
     SoundEffects soundEffects;
 
-    bool makingLemonade = false;
+    public bool makingLemonade = false;
 
     float sweetness;
     float tartness;
@@ -53,14 +53,14 @@ public class LemonadeStand : MonoBehaviour
 
     IEnumerator MakingLemonade()
     {
-        (sweetness, tartness) = ui.GetLemonadeTaste();
-        ui.ReduceRecipeUnits();
-
         if (!makingLemonade)
         {
             ui.ShowMakeLemonade(false);
             makingLemonade = true;
         }
+
+        (sweetness, tartness) = ui.GetLemonadeTaste();
+        ui.ReduceRecipeUnits();
 
         while (leftInPitcher < pitcherSize)
         {

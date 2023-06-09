@@ -44,6 +44,7 @@ public class Customer : MonoBehaviour
     [SerializeField] float targetPositionMargin = 0.05f;
     [SerializeField] float checkpointPositionMargin = 0.5f;
     [SerializeField] float areaWealth = 10;
+    [SerializeField] private float animatorSpeedChangeRate = 5f;
 
     [Header("Customer Stats")]
     [SerializeField] int thirst;
@@ -78,15 +79,14 @@ public class Customer : MonoBehaviour
     NavMeshAgent navMeshAgent;
 
     Vector3 targetPosition;
-
+    Vector3 despawnPosition;
+    bool despawnSet;
 
     float willingnessToBuy;
     bool willBuy;
 
-    bool served;
     bool enteredQueue;
 
-    [SerializeField] private float animatorSpeedChangeRate = 5f;
     private float currentAnimatorSpeed = 0f;
 
     public CustomerState State { get; set; }
@@ -129,7 +129,7 @@ public class Customer : MonoBehaviour
     {
         CustomerStateSwitch();
 
-        if (navMeshAgent.velocity.magnitude > 0.1f)
+        if (navMeshAgent.velocity.magnitude > 0.2f)
         {
             animator.SetBool("isWalking", true);
             float targetAnimatorSpeed = navMeshAgent.velocity.magnitude * walkingSpeed;
@@ -186,14 +186,13 @@ public class Customer : MonoBehaviour
         }
     }
 
-    IEnumerator CheckPointDecision()
+    IEnumerator CheckPointDecision() //tässä asiakas päättää meneekö jonoon vai ei ja käyttää aikaa päättämiseen
     {
         navMeshAgent.isStopped = true;
         yield return new WaitForSeconds(thinkingTime);
         navMeshAgent.isStopped = false;
 
-        willBuy = willingnessToBuy >= lemonadeStand.lemonadePrice - gameData.playerPopularity;
-        if (willBuy && queueManager.customersInQueue.Count < queueManager.QueueSpots.Count)
+        if (WillBuyCheck() && queueManager.customersInQueue.Count < queueManager.QueueSpots.Count)
         {
             queueManager.JoinQueue(this);
             State = CustomerState.InQueue;
@@ -208,6 +207,11 @@ public class Customer : MonoBehaviour
         }
 
         yield break;
+    }
+
+    public bool WillBuyCheck() //tarkistaa tykkääkö hinnasta josta vähennetään popularity
+    {
+        return willingnessToBuy >= lemonadeStand.lemonadePrice - gameData.playerPopularity;
     }
 
     public void MoveThroughQueue()
@@ -230,19 +234,30 @@ public class Customer : MonoBehaviour
 
             if (Vector3.Distance(transform.position, targetPosition) <= targetPositionMargin)
             {
-                if (!served)
+                if (WillBuyCheck()) //jos tykkää hinnasta, menee tarjoiltavaksi
                 {
-                    served = true;
-                    Serve();
+                    GetServed();
                 }
-                
+                else //jos ei, lähtee menee ja poistuu jonosta
+                {
+                    queueManager.LeaveQueue(this);
+                    State = CustomerState.Exiting;
+                }
             }
         }
     }
 
-    public void Serve()
+    public void GetServed()
     {
-        lemonadeStand.SetCurrentCustomer(this);
+        if (WillBuyCheck()) //jos edelleen tykkää hinnasta, tarjoillaan
+        {
+            lemonadeStand.SetCurrentCustomer(this);
+        }
+        else //jos ei, lähtee menee ja poistuu jonosta
+        {
+            queueManager.LeaveQueue(this);
+            State = CustomerState.Exiting;
+        }
     }
 
     public bool IsTastePreferred(float sweetness, float tartness)
@@ -307,10 +322,7 @@ public class Customer : MonoBehaviour
         lemonadeStand.popularityDecreaseAnim.SetActive(false);
     }
 
-
-    bool despawnSet;
-    Vector3 despawnPosition;
-    void Exit()
+    public void Exit()
     {
         if (!despawnSet)
         {
