@@ -115,7 +115,6 @@ public class Customer : MonoBehaviour
     {
         floatingTipText.SetActive(false);
 
-        served = false;
         enteredQueue = false;
 
         RandomizeStats();
