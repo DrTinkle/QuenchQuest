@@ -32,7 +32,7 @@ public class TimeManager : MonoBehaviour
 
     Color sunriseColor = new(1f, 0.64f, 0.37f);
     Color noonColor = Color.white;
-    Color sunsetColor = new(0.69f, 0.13f, 0.13f);
+    Color sunsetColor = new(0.8f, 0.4f, 0.4f);
 
     public float Hours { get; private set; }
     public float Minutes { get; private set; }
@@ -65,7 +65,7 @@ public class TimeManager : MonoBehaviour
     {
         CalculateTime();
         AdjustLighting();
-        AdjustLightAndAmbientColor();
+        AdjustLightAmbientColor();
         ControlSpotLights();
         ControlGameTimeScale();
     }
@@ -89,7 +89,7 @@ public class TimeManager : MonoBehaviour
         if (time - lastUpdateTime > updateInterval)
         {
             float rotationAngleY = Mathf.Lerp(180f, 0f, InterpolateRotationValue(Hours));
-            float rotationAngleX = Mathf.Lerp(0f, 90f, InterpolateRotationValue(Hours));
+            float rotationAngleX = Mathf.Lerp(180f, 0f, InterpolateRotationValue(Hours));
 
             Vector3 eulerRotation = new(rotationAngleX, rotationAngleY, 0f);
             directionalLight.transform.rotation = Quaternion.Euler(eulerRotation);
@@ -104,7 +104,7 @@ public class TimeManager : MonoBehaviour
         }
     }
 
-    void AdjustLightAndAmbientColor()
+    void AdjustLightAmbientColor()
     {
         if (Hours >= dawn && Hours < noon)
         {

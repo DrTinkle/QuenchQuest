@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "GameData", menuName = "ScriptableObjects/GameData", order = 1)]
@@ -14,4 +15,6 @@ public class GameData : ScriptableObject
     public int sugarMarketPrice;
     public int playerPopularity;
     public int currentSceneIndex;
+    public WeatherSystem.Weather currentWeather;
+    public List<WeatherSystem.Weather> weatherForecast;
 }
