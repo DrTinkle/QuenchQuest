@@ -56,9 +56,9 @@ public class BuyMenuLogic : MonoBehaviour
 
     int rentAmount = 5000;
 
-    int startingLemonsMarketPrice = 36;
+    int startingLemonsMarketPrice = 0;
     int currentLemonsMarketPrice;
-    int startingSugarMarketPrice = 20;
+    int startingSugarMarketPrice = 0;
     int currentSugarMarketPrice;
 
     //bool firstDay;
