@@ -26,3 +26,7 @@ Keep an eye on your stock and manage your time wisely to ensure you're ready for
 - **Upgrades or Expansion**: Earn money to upgrade your stand and improve production efficiency.
 
 - **Weather Effects**: Deal with weather changes that could impact customer demand.
+
+## License
+
+This project is licensed under the MIT license.
