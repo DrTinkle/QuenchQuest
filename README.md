@@ -1,4 +1,4 @@
-# QuenchQuest
+# QuenchQuest (Developement on pause)
 Upcoming lemonade tycoon rogue-like game
 
 Check out at https://drtinkle.itch.io/quenchquest
